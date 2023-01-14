@@ -1,9 +1,11 @@
-# Syntax Highlighter for VSCode
+# Syntax Highlighter for VSCode (Apertium)
 
-#### Syntax highlighter based on [Tree-Sitter](https://tree-sitter.github.io/tree-sitter/).
+#### Syntax highlighter based on [Tree-Sitter](https://tree-sitter.github.io/tree-sitter/), with Apertium extensions.
 #### Languages:
 #### C++, C, Python, TypeScript, TypeScriptReact, JavaScript,
 #### Go, Rust, Php, Ruby, ShellScript, Bash, OCaml, Lua
+#### Apertium languages:
+#### rtx
 
 ![demo](images/demo.gif)
 
@@ -22,6 +24,7 @@
 * Bash
 * OCaml
 * Lua
+* Apertium languages: rtx
 * More to come...
 
 ## Description

@@ -1,9 +1,9 @@
 {
     "name": "syntax-highlighter",
-    "displayName": "Syntax Highlighter",
-    "description": "Syntax highlighting based on Tree-sitter",
+    "displayName": "Syntax Highlighter (Apertium)",
+    "description": "Syntax highlighting based on Tree-sitter, with Apertium extensions",
     "homepage": "https://github.com/EvgeniyPeshkov/syntax-highlighter",
-    "version": "0.5.1",
+    "version": "0.5.2",
     "publisher": "evgeniypeshkov",
     "license": "MIT",
     "icon": "images/syntax.png",
@@ -43,6 +43,7 @@
         "JS",
         "Go",
         "Rust",
+        "Rtx",
         "Php",
         "Ruby",
         "ShellScript",
@@ -82,13 +83,13 @@
     },
     "dependencies": {
         "jsonc-parser": "^2.2.1",
-        "nodegit": "^0.27.0",
+        "nodegit": "^0.26.5",
         "web-tree-sitter": "^0.19.1"
     },
     "devDependencies": {
         "@types/node": "^13.7.2",
         "@types/vscode": "^1.46.0",
-        "ovsx": "0.1.0-next.a9154dc",
+        "ovsx": "^0.8.0",
         "tree-sitter": "^0.20.1",
         "tree-sitter-bash": "^0.19.0",
         "tree-sitter-c": "^0.20.1",
@@ -107,7 +108,7 @@
         "tree-sitter-typescript": "^0.20.1",
         "tslint": "^6.1.2",
         "typescript": "^4.9.3",
-        "vsce": "^1.87.0"
+        "vsce": "^2.15.0"
     },
     "contributes": {
         "semanticTokenTypes": [
@@ -126,6 +127,19 @@
                         "storage.modifier"
                     ]
                 }
+            }
+        ],
+        "languages": [
+            {
+                "id": "rtx",
+                "aliases": [
+                    "rtx",
+                    "apertium-recursive",
+                    "Apertium recursive transfer"
+                ],
+                "extensions": [
+                    ".rtx"
+                ]
             }
         ],
         "configuration": {
